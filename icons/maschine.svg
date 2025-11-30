@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <!-- Machine Body Gradient (White/Grey) -->
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FDFEFE;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#BDC3C7;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Dark Interior Gradient -->
+    <linearGradient id="interiorGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2C3E50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34495E;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Screen Gradient -->
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3498DB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2980B9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Main Enclosure -->
+  <rect x="5" y="15" width="65" height="70" fill="url(#bodyGrad)" stroke="#7F8C8D" stroke-width="1"/>
+  
+  <!-- Top Unit (Filter/Motor) -->
+  <rect x="25" y="5" width="25" height="10" fill="#ECF0F1" stroke="#7F8C8D" stroke-width="1"/>
+  
+  <!-- Sliding Door Window (Left) -->
+  <rect x="10" y="25" width="25" height="45" fill="#BDC3C7" stroke="#95A5A6" stroke-width="1" opacity="0.5"/>
+  <!-- Logo on Door -->
+  <circle cx="15" cy="30" r="3" fill="#E74C3C"/>
+  <rect x="19" y="28" width="10" height="4" fill="#7F8C8D"/>
+
+  <!-- Main Workspace Window (Center/Right) -->
+  <rect x="35" y="25" width="30" height="45" fill="url(#interiorGrad)" stroke="#34495E" stroke-width="1"/>
+  
+  <!-- Spindle (Inside) -->
+  <rect x="48" y="25" width="4" height="15" fill="#BDC3C7"/>
+  <polygon points="48,40 52,40 50,45" fill="#F1C40F"/>
+  
+  <!-- Table (Inside) -->
+  <path d="M 38 60 L 62 60 L 60 68 L 40 68 Z" fill="#95A5A6" stroke="#7F8C8D" stroke-width="0.5"/>
+  <line x1="42" y1="60" x2="44" y2="68" stroke="#34495E" stroke-width="0.5"/>
+  <line x1="48" y1="60" x2="50" y2="68" stroke="#34495E" stroke-width="0.5"/>
+  <line x1="54" y1="60" x2="56" y2="68" stroke="#34495E" stroke-width="0.5"/>
+
+  <!-- Door Handle (Red) -->
+  <path d="M 30 40 L 28 40 L 28 55 L 30 55" stroke="#E74C3C" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M 65 40 L 67 40 L 67 55 L 65 55" stroke="#E74C3C" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- Model Text -->
+  <text x="58" y="50" font-family="Arial" font-size="12" font-weight="bold" fill="#BDC3C7" transform="rotate(-90 58,50)">C400</text>
+
+  <!-- Control Panel (Right Side) -->
+  <g transform="translate(75, 30)">
+    <!-- Arm -->
+    <path d="M -5 40 L 0 40 L 0 0" stroke="#34495E" stroke-width="3" fill="none"/>
+    
+    <!-- Panel Body -->
+    <rect x="0" y="0" width="20" height="30" rx="2" fill="#34495E" stroke="#2C3E50" stroke-width="1"/>
+    
+    <!-- Screen -->
+    <rect x="2" y="2" width="16" height="12" fill="url(#screenGrad)"/>
+    <!-- UI Lines -->
+    <line x1="3" y1="4" x2="10" y2="4" stroke="white" stroke-width="0.5" opacity="0.7"/>
+    <line x1="3" y1="6" x2="12" y2="6" stroke="white" stroke-width="0.5" opacity="0.7"/>
+    <line x1="3" y1="8" x2="8" y2="8" stroke="white" stroke-width="0.5" opacity="0.7"/>
+    
+    <!-- Keypad Area -->
+    <rect x="2" y="16" width="16" height="12" fill="#95A5A6"/>
+    <circle cx="15" cy="25" r="1.5" fill="#E74C3C"/> <!-- E-Stop -->
+    
+    <!-- Side Buttons -->
+    <rect x="18" y="5" width="2" height="20" fill="#2C3E50"/>
+  </g>
+  
+  <!-- Base -->
+  <rect x="5" y="85" width="65" height="5" fill="#2C3E50"/>
+
+</svg>

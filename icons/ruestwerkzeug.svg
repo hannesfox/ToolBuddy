@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <!-- Cabinet Blue Gradient (Front) -->
+    <linearGradient id="blueFront" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3498DB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2980B9;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Cabinet Blue Gradient (Side - Darker) -->
+    <linearGradient id="blueSide" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2471A3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1F618D;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Cabinet Blue Gradient (Top - Lighter) -->
+    <linearGradient id="blueTop" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#5DADE2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3498DB;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Handle Gradient (Silver) -->
+    <linearGradient id="silverHandle" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ECF0F1;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#BDC3C7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#95A5A6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- 3D Box Construction -->
+  
+  <!-- Side Face (Left) -->
+  <path d="M 10 15 L 30 25 L 30 95 L 10 85 Z" fill="url(#blueSide)" stroke="#154360" stroke-width="0.5"/>
+  
+  <!-- Top Face -->
+  <path d="M 10 15 L 70 15 L 90 25 L 30 25 Z" fill="url(#blueTop)" stroke="#154360" stroke-width="0.5"/>
+  
+  <!-- Front Face -->
+  <rect x="30" y="25" width="60" height="70" fill="url(#blueFront)" stroke="#154360" stroke-width="0.5"/>
+  
+  <!-- Frame/Bezel around drawers -->
+  <rect x="34" y="29" width="52" height="62" fill="none" stroke="#1F618D" stroke-width="1"/>
+
+  <!-- Drawers (7 drawers) -->
+  <!-- Drawer 1 -->
+  <rect x="35" y="30" width="50" height="7" fill="#2980B9"/>
+  <rect x="36" y="31" width="48" height="5" fill="url(#silverHandle)" rx="1"/>
+  
+  <!-- Drawer 2 -->
+  <rect x="35" y="39" width="50" height="7" fill="#2980B9"/>
+  <rect x="36" y="40" width="48" height="5" fill="url(#silverHandle)" rx="1"/>
+  
+  <!-- Drawer 3 -->
+  <rect x="35" y="48" width="50" height="7" fill="#2980B9"/>
+  <rect x="36" y="49" width="48" height="5" fill="url(#silverHandle)" rx="1"/>
+  
+  <!-- Drawer 4 -->
+  <rect x="35" y="57" width="50" height="7" fill="#2980B9"/>
+  <rect x="36" y="58" width="48" height="5" fill="url(#silverHandle)" rx="1"/>
+  
+  <!-- Drawer 5 -->
+  <rect x="35" y="66" width="50" height="7" fill="#2980B9"/>
+  <rect x="36" y="67" width="48" height="5" fill="url(#silverHandle)" rx="1"/>
+  
+  <!-- Drawer 6 -->
+  <rect x="35" y="75" width="50" height="7" fill="#2980B9"/>
+  <rect x="36" y="76" width="48" height="5" fill="url(#silverHandle)" rx="1"/>
+  
+  <!-- Drawer 7 -->
+  <rect x="35" y="84" width="50" height="7" fill="#2980B9"/>
+  <rect x="36" y="85" width="48" height="5" fill="url(#silverHandle)" rx="1"/>
+
+  <!-- Lock (Top Center of Front Face) -->
+  <circle cx="60" cy="27" r="1.5" fill="#BDC3C7" stroke="#7F8C8D" stroke-width="0.5"/>
+  <path d="M 60 27 L 60 30" stroke="#BDC3C7" stroke-width="1"/>
+  
+  <!-- Brand Label (Top Left of Front Face) -->
+  <rect x="32" y="26" width="8" height="2" fill="#ECF0F1"/>
+
+</svg>
